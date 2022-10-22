@@ -1,0 +1,108 @@
+.footer {
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+  &__blur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+  &__column:not(:last-child) {
+    margin-right: 88px;
+  }
+  &__column:first-child {
+    margin-right: 260px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    margin: 16px 0 24px;
+    color: #626687;
+    opacity: 0.75;
+  }
+  &__icon {
+    text-decoration: none;
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+    img {
+      pointer-events: none;
+    }
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(32 / 18);
+    color: var(--dark-color);
+    text-transform: capitalize;
+    margin-bottom: 24px;
+  }
+  &__list {
+    list-style-type: none;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 18px;
+  }
+  &__link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+    color: #888b97;
+    text-transform: capitalize;
+    transition: color 0.25s linear;
+    &:hover {
+      color: #10b981;
+    }
+  }
+  &__copyright {
+    font-size: 14.5px;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+  }
+  &__copyright-icon {
+    font-size: 30px;
+    padding: 0 4px;
+  }
+  &__copyright-admin {
+    line-height: 2.6;
+    color: inherit;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.25s linear;
+    &:hover {
+      color: #10b981;
+    }
+  }
+  @include maxWidth(1279px) {
+    &__column:first-child {
+      margin-right: 60px;
+    }
+  }
+  @include maxWidth(1023px) {
+    padding: 80px 0 60px;
+    &__column:not(:nth-child(9999)) {
+      margin-right: 40px;
+    }
+  }
+  @include maxWidth(767px) {
+    padding: 60px 0 40px;
+    &__wrapper {
+      grid-template-columns: 1fr;
+    }
+    &__column:not(:nth-child(9999)) {
+      margin-right: 0;
+    }
+    &__column:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
+}

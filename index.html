@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>House Hunter</title>
+</head>
+
+<body>
+    <iframe class="delay-loading" width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe class="delay-loading" width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <iframe class="delay-loading" width="560" height="315" src="https://www.youtube.com/embed/Yf5d_Zx3AaI"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    <div class="wrapper-loader">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <label for="toggle-sw" class="toggle-switch">
+            <input type="checkbox" name="" id="toggle-sw" class="darkmode-input hidden" />
+            <div class="darkmode-main">
+                <div class="darkmode-spinner">
+                    <ion-icon class="btn-sunny" name="sunny-outline"></ion-icon>
+                    <ion-icon class="btn-moon hidden" name="moon-outline"></ion-icon>
+                </div>
+            </div>
+        </label>
+        <img src="images/header-blur.png" alt="this-is-blur" class="wrapper__blur">
+        <img class="wrapper__bg" src="./images/header-bg.png" alt="this-is-page-bg">
+        <div class="header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="header-top__main">
+                        <a href="index.html">
+                            <img src="images/Logo.png" alt="this-is-logo">
+                        </a>
+                        <div class="header-top__menu">
+                            <ion-icon class="header-top__close" name="close-outline"></ion-icon>
+                            <ul class="header-top__nav">
+                                <li class="header-top__item">
+                                    <a class="header-top__link" href="#">About US</a>
+                                </li>
+                                <li class="header-top__item">
+                                    <a class="header-top__link" href="#">Article</a>
+                                </li>
+                                <li class="header-top__item">
+                                    <a class="header-top__link" href="#">
+                                        Property
+                                        <img src="images/header-icon-down.svg" alt="this-is-header-icon">
+                                    </a>
+                                </li>
+                            </ul>
+                            <a href="#" class="header-top__btn">
+                                Sign up!
+                            </a>
+                        </div>
+                        <ion-icon class="header-top__bar" name="bar-chart-outline"></ion-icon>
+                    </div>
+                </div>
+                <!-- <img class="header-image" src="images/header-bg.png" alt=""> -->
+                <div class="header-hero">
+                    <h1 class="header-hero__heading">
+                        find the place to<br>
+                        live <span>your dreams</span><br>
+                        easily here
+                    </h1>
+                    <p class="header-hero__desc">
+                        Everything you need about finding your place to live will be here, where it will be easier for
+                        you
+                    </p>
+                    <form action="" class="header-hero__form">
+                        <div class="header-hero__search">
+                            <img class="header-hero__map" src="images/header-icon-map.svg" alt="header-hero-icon-map">
+                            <input required placeholder="Search for the location you want!" type="text"
+                                class="header-hero__input">
+                        </div>
+                        <button class="btn">
+                            Search
+                            <img class="btn__icon-right" src="images/header-icon-btn.svg" alt="header-icon-btn">
+                        </button>
+                    </form>
+                    <div class="header-hero__text">Our Partnership</div>
+                    <div class="header-hero__brand">
+                        <img src="images/header-hero-brand1.png" alt="this-is-header-hero-brand">
+                        <img src="images/header-hero-brand2.png" alt="this-is-header-hero-brand">
+                        <img src="images/header-hero-brand3.png" alt="this-is-header-hero-brand">
+                        <img src="images/header-hero-brand4.png" alt="this-is-header-hero-brand">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="featured">
+            <div class="container">
+                <div class="featured__wrapper">
+                    <div class="heading-block">
+                        <span class="heading-block__line heading-block__line-center">Our Recommendation</span>
+                        <h2>Featured House</h2>
+                    </div>
+                    <ul class="featured__tab">
+                        <li class="featured__item">
+                            <a class="featured__link active" href="#!">
+                                <img src="images/featured-icon1.svg" alt="">
+                                House
+                            </a>
+                        </li>
+                        <li class="featured__item">
+                            <a class="featured__link" href="#!">
+                                <img src="images/featured-icon2.svg" alt="">
+                                Villa
+                            </a>
+                        </li>
+                        <li class="featured__item">
+                            <a class="featured__link" href="#!">
+                                <img src="images/featured-icon3.svg" alt="">
+                                Apart
+                                ment</a>
+                        </li>
+                    </ul>
+                    <div class="featured__direction">
+                        <a href="#!" class="featured__icon featured__icon--left">
+                            <img src="images/featured-icon-left.svg" alt="">
+                        </a>
+                        <a href="#!" class="featured__icon featured__icon--right">
+                            <img src="images/featured-icon-right.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="featured-carousel owl-carousel owl-theme">
+                    <div class="featured-carousel__item item">
+                        <div class="featured-carousel__image">
+                            <img src="images/featured-1.png" alt="">
+                            <div class="featured-carousel__label featured-carousel__label--red">
+                                <img src="images/featured-fire-icon.svg" alt="">
+                                Popular
+                            </div>
+                        </div>
+                        <div class="featured-carousel__content">
+                            <h3 class="featured-carousel__title">Roselands House</h3>
+                            <span class="featured-carousel__price">1 35.000.000</span>
+                        </div>
+                        <div class="featured-carousel__author">
+                            <img class="featured-carousel__avatar" src="images/featured-avatart1.png"
+                                alt="this-is-avatar">
+                            <div class="featured-carousel__intro">
+                                <h4>Dianne Russell</h4>
+                                <p>Manchester, Kentucky</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-carousel__item item">
+                        <div class="featured-carousel__image">
+                            <img src="images/featured-2.png" alt="">
+                            <div class="featured-carousel__label featured-carousel__label--blue">
+                                <img src="images/featured-house-icon.svg" alt="">
+                                New House
+                            </div>
+                        </div>
+                        <div class="featured-carousel__content">
+                            <h3 class="featured-carousel__title">Woodlandside</h3>
+                            <span class="featured-carousel__price">$ 20.000.000</span>
+                        </div>
+                        <div class="featured-carousel__author">
+                            <img class="featured-carousel__avatar" src="images/featured-avatart2.png"
+                                alt="this-is-avatar">
+                            <div class="featured-carousel__intro">
+                                <h4>Robert Fox</h4>
+                                <p>Dr. San Jose, South Dakota</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-carousel__item item">
+                        <div class="featured-carousel__image">
+                            <img src="images/featured-3.png" alt="">
+                            <div class="featured-carousel__label featured-carousel__label--green">
+                                <img src="images/featured-best-icon.svg" alt="">
+                                Best Deals
+                            </div>
+                        </div>
+                        <div class="featured-carousel__content">
+                            <h3 class="featured-carousel__title">The Old Lighthouse</h3>
+                            <span class="featured-carousel__price">$ 44.000.000</span>
+                        </div>
+                        <div class="featured-carousel__author">
+                            <img class="featured-carousel__avatar" src="images/featured-avatart3.png"
+                                alt="this-is-avatar">
+                            <div class="featured-carousel__intro">
+                                <h4>Ronald Richards</h4>
+                                <p>Santa Ana, Illinois</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-carousel__item item">
+                        <div class="featured-carousel__image">
+                            <img src="images/featured-4.png" alt="">
+                            <div class="featured-carousel__label featured-carousel__label--red">
+                                <img src="images/featured-fire-icon.svg" alt="">
+                                Popular
+                            </div>
+                        </div>
+                        <div class="featured-carousel__content">
+                            <h3 class="featured-carousel__title">Cosmo's House</h3>
+                            <span class="featured-carousel__price">$ 22.000.000</span>
+                        </div>
+                        <div class="featured-carousel__author">
+                            <img class="featured-carousel__avatar" src="images/featured-avatart4.png"
+                                alt="this-is-avatar">
+                            <div class="featured-carousel__intro">
+                                <h4>Jenny Wilson</h4>
+                                <p>Preston Rd. Inglewood, Maine 98380</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featured-carousel__item item">
+                        <div class="featured-carousel__image">
+                            <img src="images/featured-5.png" alt="">
+                            <div class="featured-carousel__label featured-carousel__label--red">
+                                <img src="images/featured-fire-icon.svg" alt="">
+                                Popular
+                            </div>
+                        </div>
+                        <div class="featured-carousel__content">
+                            <h3 class="featured-carousel__title">Roselands House</h3>
+                            <span class="featured-carousel__price">1 35.000.000</span>
+                        </div>
+                        <div class="featured-carousel__author">
+                            <img class="featured-carousel__avatar" src="images/featured-avatart1.png"
+                                alt="this-is-avatar">
+                            <div class="featured-carousel__intro">
+                                <h4>Dianne Russell</h4>
+                                <p>Manchester, Kentucky</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="house">
+            <img class="house__blur" src="images/house-blur.png" alt="">
+            <div class="container">
+                <div class="house-wrapper">
+                    <div class="house-content">
+                        <div class="heading-block">
+                            <span class="heading-block__line heading-block__line-center">Ready to Sell!</span>
+                            <h2>Let’s tour and see our house!</h2>
+                        </div>
+                        <p class="house-content__desc">
+                            Houses recommended by our partners that have <br> been curated to become the home of your
+                            dreams!
+                        </p>
+                        <span class="house-content__text">House Detail</span>
+                        <div class="house-content__detail">
+                            <div class="house-content__column">
+                                <div class="house-content__group">
+                                    <img src="images/house-icon1.svg" alt="">
+                                    <span>4 Bedrooms</span>
+                                </div>
+                                <div class="house-content__group">
+                                    <img src="images/house-icon2.svg" alt="">
+                                    <span>1 Carport</span>
+                                </div>
+                            </div>
+                            <div class="house-content__column">
+                                <div class="house-content__group">
+                                    <img src="images/house-icon3.svg" alt="">
+                                    <span>2 Bathrooms</span>
+                                </div>
+                                <div class="house-content__group">
+                                    <img src="images/house-icon4.svg" alt="">
+                                    <span>2 Floors</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="house-content__contact">
+                            <div class="house-content__author">
+                                <img src="images/house-author-image.png" alt="">
+                                <div class="house-content__main">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <a href="#!" class="btn">
+                                <img class="btn__icon-phone" src="images/house-contact-icon.svg"
+                                    alt="this-is-icon-phone">
+                                Contact Now
+                            </a>
+                        </div>
+                    </div>
+                    <div class="house-image">
+                        <img src="images/house-image.png" alt="this-is-image-video">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="heading-block heading-block--center">
+                <div class="container">
+                    <span class="heading-block__line heading-block__line-top">See Our Review</span>
+                    <h2>What Our User Say About Us</h2>
+                </div>
+            </div>
+            <div class="about-carousel owl-carousel owl-theme">
+                <div class="about-carousel__item item">
+                    <img class="about-carousel__image" src="images/about-image1.png" alt="this-is-about-image">
+                    <div class="about-carousel__content">
+                        <h3>Best! I got the house I wanted through Hounter</h3>
+                        <p>
+                            Through this website I can get a house with the type and specifications I want very
+                            easily, without a complicated process to be able to find information on the house we
+                            want.
+                        </p>
+                        <div class="about-carousel__group">
+                            <div class="about-carousel__author">
+                                <img class="about-carousel__avatar" src="images/house-author-image.png" alt="">
+                                <div class="about-carousel__intro">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel__review">
+                                <img src="images/about-icon-star.svg" alt="">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-carousel__item item">
+                    <img class="about-carousel__image" src="images/about-image2.png" alt="this-is-about-image">
+                    <div class="about-carousel__content">
+                        <h3>Through the Hounter, I can get a house for my self</h3>
+                        <p>
+                            By looking for information about what kind of house we want, we managed to get the house we
+                            wanted very quickly, and directly connected with the seller to be able to ask about the
+                            details, very helpful!
+                        </p>
+                        <div class="about-carousel__group">
+                            <div class="about-carousel__author">
+                                <img class="about-carousel__avatar" src="images/house-author-image.png" alt="">
+                                <div class="about-carousel__intro">
+                                    <h4>Esther Howard</h4>
+                                    <p>Head of Marketing</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel__review">
+                                <img src="images/about-icon-star.svg" alt="">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-carousel__item item">
+                    <img class="about-carousel__image" src="images/about-image3.png" alt="this-is-about-image">
+                    <div class="about-carousel__content">
+                        <h3>My house sold out fast!</h3>
+                        <p>
+                            I was finally able to sell my house quickly through Hounter by immediately setting me up
+                            with people who wanted my house. I also do not get a discount from the sale of my house.
+                            Awesome!
+                        </p>
+                        <div class="about-carousel__group">
+                            <div class="about-carousel__author">
+                                <img class="about-carousel__avatar" src="images/house-author-image.png" alt="">
+                                <div class="about-carousel__intro">
+                                    <h4>Courtney Henry</h4>
+                                    <p>CEO Andarafish</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel__review">
+                                <img src="images/about-icon-star.svg" alt="">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-carousel__item item">
+                    <img class="about-carousel__image" src="images/about-image4.png" alt="this-is-about-image">
+                    <div class="about-carousel__content">
+                        <h3>Best! I got the house I wanted through Hounter</h3>
+                        <p>
+                            Through this website I can get a house with the type and specifications I want very
+                            easily, without a complicated process to be able to find information on the house we
+                            want.
+                        </p>
+                        <div class="about-carousel__group">
+                            <div class="about-carousel__author">
+                                <img class="about-carousel__avatar" src="images/house-author-image.png" alt="">
+                                <div class="about-carousel__intro">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel__review">
+                                <img src="images/about-icon-star.svg" alt="">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-carousel__item item">
+                    <img class="about-carousel__image" src="images/about-image5.png" alt="this-is-about-image">
+                    <div class="about-carousel__content">
+                        <h3>Best! I got the house I wanted through Hounter</h3>
+                        <p>
+                            Through this website I can get a house with the type and specifications I want very
+                            easily, without a complicated process to be able to find information on the house we
+                            want.
+                        </p>
+                        <div class="about-carousel__group">
+                            <div class="about-carousel__author">
+                                <img class="about-carousel__avatar" src="images/house-author-image.png" alt="">
+                                <div class="about-carousel__intro">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel__review">
+                                <img src="images/about-icon-star.svg" alt="">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-carousel__item item">
+                    <img class="about-carousel__image" src="images/about-image6.png" alt="this-is-about-image">
+                    <div class="about-carousel__content">
+                        <h3>Best! I got the house I wanted through Hounter</h3>
+                        <p>
+                            Through this website I can get a house with the type and specifications I want very
+                            easily, without a complicated process to be able to find information on the house we
+                            want.
+                        </p>
+                        <div class="about-carousel__group">
+                            <div class="about-carousel__author">
+                                <img class="about-carousel__avatar" src="images/house-author-image.png" alt="">
+                                <div class="about-carousel__intro">
+                                    <h4>Dianne Russell</h4>
+                                    <p>Manager Director</p>
+                                </div>
+                            </div>
+                            <div class="about-carousel__review">
+                                <img src="images/about-icon-star.svg" alt="">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="articles">
+            <img class="articles__blur" src="images/articles-blur.png" alt="">
+            <div class="container">
+                <div class="heading-block heading-block--center">
+                    <span class="heading-block__line heading-block__line-top">See tips and trick from our
+                        partnership</span>
+                    <h2>Find out more about<br>
+                        selling and buying homes</h2>
+                    <a href="#!" class="btn">More Artikel</a>
+                </div>
+
+                <div class="articles__wrapper">
+                    <div class="articles__column">
+                        <div class="articles__item">
+                            <img class="articles__image" src="images/articles-image1.png" alt="">
+                            <div class="articles__content">
+                                <div class="articles__author">
+                                    <img src="images/avatar-1.png" alt="this-is-avatar">
+                                    <span>Dianne Russell</span>
+                                </div>
+                                <h3 class="articles__title">The things we need to check when we want to buy a house</h3>
+                                <div class="articles__calendar">
+                                    <img src="images/articles-icon-time.svg" alt="this-is-icon">
+                                    <span>4 min read | 25 Apr 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item">
+                            <img class="articles__image" src="images/articles-image2.png" alt="">
+                            <div class="articles__content">
+                                <div class="articles__author">
+                                    <img src="images/avatar-2.png" alt="this-is-avatar">
+                                    <span>Courtney Henry</span>
+                                </div>
+                                <h3 class="articles__title">7 Ways to distinguish the quality of the house we want to
+                                    buy</h3>
+                                <div class="articles__calendar">
+                                    <img src="images/articles-icon-time.svg" alt="this-is-icon">
+                                    <span>6 min read | 24 Apr 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="articles__item">
+                            <img class="articles__image" src="images/articles-image3.png" alt="">
+                            <div class="articles__content">
+                                <div class="articles__author">
+                                    <img src="images/avatar-3.png" alt="this-is-avatar">
+                                    <span>Darlene Robertson</span>
+                                </div>
+                                <h3 class="articles__title">The best way to know the quality of the house we want to buy
+                                </h3>
+                                <div class="articles__calendar">
+                                    <img src="images/articles-icon-time.svg" alt="this-is-icon">
+                                    <span>2 min read | 24 Apr 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles__column">
+                        <img class="articles__image-big" src="images/articles-image-big.png" alt="">
+                        <div class="articles__content">
+                            <div class="articles__author">
+                                <img src="images/avatar-4.png" alt="this-is-avatar">
+                                <span>Cameron Williamson</span>
+                            </div>
+                            <h3 class="articles__title articles__title--large">12 Things to know before buying a house
+                            </h3>
+                            <p class="articles__desc">
+                                Want to buy a house but are unsure about what we should know, here I will try to explain
+                                what we should know and check when we want to buy a house
+                            </p>
+                            <div class="articles__calendar">
+                                <img src="images/articles-icon-time.svg" alt="this-is-icon">
+                                <span>8 min read | 25 Apr 2021</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <div class="container">
+                <div class="subscribe__bg">
+                    <div class="subscribe__content">
+                        <h2 class="subscribe__title">Subscribe For More Info
+                            and update from Hounter</h2>
+                        <form class="subscribe__form" action="">
+                            <div class="subscribe__email">
+                                <img src="images/subscribe-icon.svg" alt="this-is-icon">
+                                <input placeholder="Your email here" type="email" required>
+                            </div>
+                            <button type="submit" class="btn">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <img class="footer__blur" src="images/footer-blur.png" alt="this-is-blur">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__column">
+                        <a href="index.html">
+                            <img src="images/Logo.png" alt="this-is-logo">
+                        </a>
+                        <div class="footer__desc">
+                            We provide information about properties such as houses, villas and apartments to help people
+                            find their dream home
+                        </div>
+                        <p class="footer__copyright">
+                            Giao diện được code bởi lập trình viên thiên tài,
+                            <a target="_blank" href="https://github.com/khangdev1998" class="footer__copyright-admin">
+                                Khang Nguyễn
+                                <ion-icon class="footer__copyright-icon" name="logo-react"></ion-icon>
+                            </a>
+                        </p>
+                        <div class="footer__social">
+                            <a class="footer__icon" href="#!">
+                                <img src="images/footer-social-fb.svg" alt="this-is-icon">
+                            </a>
+                            <a class="footer__icon" href="#!">
+                                <img src="images/footer-social-tw.svg" alt="this-is-icon">
+                            </a>
+                            <a class="footer__icon" href="#!">
+                                <img src="images/footer-social-instagram.svg" alt="this-is-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">
+                            Property
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    House
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Apartment
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Villa
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">
+                            Articles
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    New Article
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Popular Article
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Most Read
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    Tips & Tricks
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h3 class="footer__title">
+                            Contact
+                        </h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#!" class="footer__link">
+                                    2464 Royal Ln. Mesa, New Jersey 45463
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="tel: 6715550110" class="footer__link">
+                                    (671) 555-0110
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="mailto: info@hounter.com" class="footer__link">
+                                    info@hounter.com
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup Video -->
+        <div class="popup-video">
+            <video width="900" controls src="video/video.webm"></video>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+
+</html>

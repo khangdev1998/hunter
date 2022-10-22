@@ -1,0 +1,102 @@
+.about {
+  margin: 129px 0 125px;
+  &-carousel {
+    margin-top: 40px;
+  }
+  &__image {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-carousel__item {
+    width: 740px;
+    max-width: 100%;
+  }
+  &-carousel__image {
+    border-radius: 8px;
+    height: 400px;
+    object-fit: cover;
+  }
+  &-carousel__content {
+    // Trick: https://stackoverflow.com/questions/26968921/negative-margin-and-background
+    position: relative;
+    margin: -145px auto 0;
+    padding: 32px;
+    width: 612px;
+    max-width: 100%;
+    border-radius: 16px;
+    @include bgc(white);
+    & > h3 {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: calc(25 / 20);
+      color: var(--dark-color);
+      text-transform: capitalize;
+      word-break: break-all;
+    }
+    & > p {
+      word-break: break-all;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      color: var(--gray-87-color);
+      margin: 16px 0 24px 0;
+    }
+    box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
+  }
+  &-carousel__group {
+    @include flexbox2(flex, center, space-between);
+  }
+  &-carousel__author {
+    @include flexbox2(flex, center);
+  }
+  &-carousel__intro {
+    margin-left: 24px;
+    h4 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(22 / 14);
+      color: var(--dark-color);
+    }
+    p {
+      margin-top: 4px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: calc(22 / 14);
+      color: var(--gray-97-color);
+    }
+  }
+  &-carousel__avatar {
+    @include size(40px !important);
+  }
+  &-carousel__review {
+    @include flexbox2(flex, center);
+    img {
+      pointer-events: none;
+      @include size(23px !important);
+    }
+    span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: calc(28 / 20);
+      color: var(--price-color);
+      margin-left: 16px;
+    }
+  }
+  @include maxWidth(479px) {
+    margin-top: 100px;
+    &-carousel__image {
+      border-radius: initial;
+      height: 250px;
+    }
+    &-carousel__content {
+      padding: 24px;
+      margin: 0;
+    }
+  }
+  @include maxWidth(424px) {
+    &-carousel__image {
+      height: 200px;
+    }
+  }
+}

@@ -1,0 +1,120 @@
+.articles {
+  position: relative;
+  &__blur {
+    position: absolute;
+    top: -155px;
+    left: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+  &__wrapper {
+    @include flexbox2(flex, start, space-between);
+    margin-top: 42px;
+  }
+  &__column {
+    width: 100%;
+    max-width: 572px;
+    &:nth-child(2) {
+      max-width: 560px;
+      margin-left: 68px;
+    }
+  }
+  &__item {
+    @include flexbox2(flex, center, space-between);
+    &:not(:last-child) {
+      margin-bottom: 42px;
+    }
+  }
+  &__image {
+    @include size(200px, 144px);
+    border-radius: 16px;
+    margin-right: 32px;
+    display: block;
+    object-fit: cover;
+  }
+  &__author {
+    @include flexbox2(flex, center);
+    img {
+      margin-right: 16px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(22 / 14);
+      color: #3c4563;
+      word-break: break-all;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: calc(32 / 18);
+    color: var(--dark-color);
+    text-transform: capitalize;
+    margin: 12px 0;
+    word-break: break-all;
+    @include lineClamp(2);
+    &--large {
+      font-size: 24px;
+    }
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color: #626687;
+    margin-bottom: 16px;
+  }
+  &__calendar {
+    @include flexbox2(flex, center);
+    img {
+      pointer-events: none;
+    }
+    span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: calc(24 / 14);
+      color: var(--gray-97-color);
+      margin-left: 12px;
+    }
+  }
+  &__image-big {
+    border-radius: 16px;
+    max-width: 100%;
+    @include size(100%, 280px);
+    object-fit: cover;
+    display: block;
+    margin-bottom: 24px;
+  }
+  .btn {
+    margin-top: 24px;
+  }
+  @include maxWidth(1023px) {
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__column:not(:nth-child(9999)) {
+      max-width: 100%;
+      margin-left: 0;
+    }
+    &__column:last-child {
+      margin-top: 25px;
+    }
+  }
+  @include maxWidth(479px) {
+    &__item {
+      flex-direction: column;
+    }
+    &__image-big {
+      height: var(--h-articles-image);
+    }
+    &__image {
+      margin-right: 0;
+      width: 100%;
+      height: var(--h-articles-image);
+    }
+    &__content {
+      margin-top: 20px;
+    }
+  }
+}
