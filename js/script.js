@@ -89,7 +89,7 @@ $('.about .owl-carousel').owlCarousel({
     center: true,
     margin: 56,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 4000,
     smartSpeed: 450,
     nav: false,
