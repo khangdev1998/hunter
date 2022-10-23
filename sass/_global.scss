@@ -239,6 +239,9 @@ body {
       font-size: 24px;
     }
   }
+  @include maxWidth(767px) {
+    text-align: center;
+  }
 }
 h2 {
   margin-top: 12px;
