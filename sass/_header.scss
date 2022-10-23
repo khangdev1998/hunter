@@ -125,6 +125,7 @@
       @include size(82.75px, 64px);
       transition: filter 0.25s linear;
       cursor: pointer;
+      filter: var(--light-image);
       &:not(:last-child) {
         margin-right: 32px;
       }

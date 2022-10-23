@@ -21,7 +21,7 @@
     font-size: 16px;
     line-height: calc(28 / 16);
     color: var(--gray-87-color);
-    opacity: 0.75;
+    opacity: var(--opacity-none);
     margin: 16px 0;
   }
   &-content__text {
@@ -55,7 +55,7 @@
       font-weight: 500;
       font-size: 16px;
       line-height: calc(20 / 16);
-      color: #3c4563;
+      color: var(--house-text);
       text-transform: capitalize;
       margin-left: 16px;
     }

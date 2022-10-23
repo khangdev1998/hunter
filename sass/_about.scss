@@ -30,7 +30,7 @@
       font-weight: 600;
       font-size: 20px;
       line-height: calc(25 / 20);
-      color: var(--dark-color);
+      color: #1b1c57;
       text-transform: capitalize;
       word-break: break-all;
     }
@@ -39,7 +39,7 @@
       font-weight: 400;
       font-size: 14px;
       line-height: calc(24 / 14);
-      color: var(--gray-87-color);
+      color: #626687;
       margin: 16px 0 24px 0;
     }
     box-shadow: 0px 9px 32px rgba(89, 92, 219, 0.05);
@@ -56,14 +56,14 @@
       font-weight: 500;
       font-size: 14px;
       line-height: calc(22 / 14);
-      color: var(--dark-color);
+      color: #0e1735;
     }
     p {
       margin-top: 4px;
       font-weight: 500;
       font-size: 14px;
       line-height: calc(22 / 14);
-      color: var(--gray-97-color);
+      color: #888b97;
     }
   }
   &-carousel__avatar {
@@ -79,7 +79,7 @@
       font-weight: 600;
       font-size: 20px;
       line-height: calc(28 / 20);
-      color: var(--price-color);
+      color: #3C4563;
       margin-left: 16px;
     }
   }
