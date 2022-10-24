@@ -331,7 +331,6 @@ h2 {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 99999999999;
-  cursor: pointer;
   @include flexbox2(flex, center, center);
   transition: transform 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   opacity: 0;
@@ -341,8 +340,12 @@ h2 {
     transform: scale(1);
   }
   video {
-    cursor: initial;
     max-width: 900px;
+  }
+}
+@include maxWidth(1439px) {
+  .popup-video video {
+    max-width: 800px;
   }
 }
 @include maxWidth(991px) {

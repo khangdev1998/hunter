@@ -20,25 +20,22 @@ toggleSwitch.addEventListener('change', switchTheme);
 $('.featured .owl-carousel').owlCarousel({
     loop: true,
     margin: 40,
-    autoplay: true,
     autoplayTimeout: 4000,
     smartSpeed: 450,
     nav: false,
     autoWidth: true,
     mouseDrag: false,
+    items: 4,
     responsive: {
         0: {
             items: 1,
             margin: 20,
-            dots: true
         },
         600: {
             items: 2,
         },
-        1000: {
-            items: 4
-        },
-        1023: {
+        1024: {
+            autoplay: true,
             dots: false
         }
     }
@@ -89,7 +86,6 @@ $('.about .owl-carousel').owlCarousel({
     center: true,
     margin: 56,
     dots: true,
-    autoplay: true,
     autoplayTimeout: 4000,
     smartSpeed: 450,
     nav: false,
@@ -100,13 +96,13 @@ $('.about .owl-carousel').owlCarousel({
             items: 1,
             center: false,
             margin: 10,
-            autoWidth: false
+            autoWidth: false,
         },
         600: {
             items: 1,
         },
-        1000: {
-            items: 1
+        1023: {
+            autoplay: true
         }
     }
 })

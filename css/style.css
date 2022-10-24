@@ -378,7 +378,6 @@ h2 {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   z-index: 99999999999;
-  cursor: pointer;
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -393,10 +392,14 @@ h2 {
   transform: scale(1);
 }
 .popup-video video {
-  cursor: initial;
   max-width: 900px;
 }
 
+@media only screen and (max-width: 1439px) {
+  .popup-video video {
+    max-width: 800px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .popup-video video {
     max-width: 90%;
